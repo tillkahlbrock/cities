@@ -1,6 +1,6 @@
 <?php
 
-require_once __DIR__.'/vendor/autoload.php'; 
+require_once __DIR__.'/vendor/autoload.php';
 
 $citiesOfCountries = array(
     'de' => array(
@@ -19,12 +19,15 @@ $citiesOfCountries = array(
         'zurich',
         'geneva'
     ),
-    'en' => array(
+    'uk' => array(
         'london',
         'manchester',
         'liverpool'
     )
+
 );
+
+
 
 $app = new Silex\Application();
 
@@ -37,6 +40,6 @@ $app->get('/{country}/cities', function($country) use($app, $citiesOfCountries) 
     }
 
     return json_encode($cities);
-}); 
+});
 
-$app->run(); 
+$app->run();
