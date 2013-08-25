@@ -7,7 +7,16 @@ $citiesOfCountries = array(
         'berlin',
         'hamburg',
         'munich',
-        'frankfurt'
+        'frankfurt',
+        'bochum',
+        'cologne',
+        'kiel',
+        'lübeck',
+        'bielefeld',
+        'dortmund',
+        'leverkusen',
+        'ulm',
+        'tübingen'
     ),
     'fr' => array(
         'paris',
